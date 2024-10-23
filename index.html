@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <title>Document</title>
+</head>
+<body>
+  <main class="flex justify-center">
+    <div class="card bg-base-100 w-96 shadow-xl" id="calcu">
+      <div class="card-body">
+        <h2 class="card-title">Calculadora</h2>
+        <p id="display" class="text-center">0</p>
+        <div class="card-actions flex-col items-center">
+          <div class="grid grid-cols-3 gap-2">
+            <button id="one"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">1</button>
+            <button id="two"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">2</button>
+            <button id="three"   class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">3</button>
+            <button id="four"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">4</button>
+            <button id="five"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">5</button>
+            <button id="six"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">6</button>
+            <button id="seven"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">7</button>
+            <button id="eigth"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">8</button>
+            <button id="nine"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">9</button>
+            <button id="cero"  class="number btn btn-xs sm:btn-sm md:btn-md btn-primary">0</button>
+          </div>
+          <div class="flex flex-row justify-center gap-2">
+          <button id="sum"  class="operation btn btn-xs sm:btn-sm md:btn-md btn-secondary">+</button>
+          <button id="res"  class="operation btn btn-xs sm:btn-sm md:btn-md btn-secondary">-</button>
+          <button id="mul"  class="operation btn btn-xs sm:btn-sm md:btn-md btn-secondary">*</button>
+          <button id="div"  class="operation btn btn-xs sm:btn-sm md:btn-md btn-secondary">/</button>
+          </div> 
+        </div>
+        <div class="card-actions justify-center">
+          <button id='cal'  class="operation btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-primary">=</button>
+          <button id='cal'  class="operation btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary">C</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+  <script src="./index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  </footer>
+</body>
+</html>
