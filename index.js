@@ -1,24 +1,29 @@
-var numero1=3;
+var numero1=9;
 var numero2=9;
 var operador='/';
 
-switch (operador){
-  case '+':
-    console.log(numero1 + numero2);
-  break;
-  case '-':
-    console.log(numero1 - numero2);
-  break;
-  case '*':
-    console.log(numero1 * numero2);
-  break;
-  case '/':
-    console.log(numero1 / numero2);
-  break;
-  default:
-    console.log('por favor pon un operador valido')
-  break;
+if (typeof(numero1) === 'number' && typeof(numero2)==='number'){
+  switch (operador){
+    case '+':
+      console.log(numero1 + numero2);
+    break;
+    case '-':
+      console.log(numero1 - numero2);
+    break;
+    case '*':
+      console.log(numero1 * numero2);
+    break;
+    case '/':
+      console.log(numero1 / numero2);
+    break;
+    default:
+      console.log('por favor pon un operador valido');
+    break;
+  }
+}else{
+  console.log('por favor, introduce un numero en numero1 y numero2');
 }
+
 
 var dia = 1;
 switch (dia){
